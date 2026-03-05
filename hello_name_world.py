@@ -1,9 +1,9 @@
 def hello(name=""):
-    name = name.capitalize()
+    # name = name.capitalize()
     if name == "":
         return "Hello, World!"
     else:
-        return f"Hello, {name}!"
+        return f"Hello, {name.capitalize()}!"
 
 
 print(hello("John"))
