@@ -30,7 +30,16 @@ def count_vowels(word):
     words = word.strip().split()
     wordcount = len(words)
 
-    return f"{wordcount} words"
+    #vowelcount
+    vowel_lower = word.lower()
+    a = vowel_lower.count("a")
+    e = vowel_lower.count("e")
+    i = vowel_lower.count("i")
+    o = vowel_lower.count("o")
+    u = vowel_lower.count("u")
+    vowel_count = a + e + i + o + u
+
+    return f"{vowel_count} vowels, {wordcount} words"
 
 
 
