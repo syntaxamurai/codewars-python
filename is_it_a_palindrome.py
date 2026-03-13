@@ -5,11 +5,7 @@ A palindrome is a word, number, phrase, or other sequence of symbols that reads 
 '''
 
 def is_palindrome(s):
-    small_s = s.lower()
-    n_s = small_s[::-1]
-    if small_s == n_s:
-        return True
-    return False
+    return s.lower() == s[::-1].lower()
 
 print(is_palindrome("madam"))
 print(is_palindrome("racecar"))
